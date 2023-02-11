@@ -1,0 +1,340 @@
+.App {
+  text-align: center;
+}
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.ImageCarouselBox{
+  /* border: 1px solid red; */
+  margin-top: 2px;
+  width: 100%;
+
+}
+
+
+/* Navbar css ----------------------------------------------------- */
+.NavbarMainBox{
+  /* border: 1px solid red; */
+  display: flex;
+  height: 80px;
+   width: 100%;
+  position:fixed;
+  background:white;
+  justify-content: space-evenly;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ 
+}
+
+.NavImg{
+   height: 80%;
+   margin: auto;
+   margin-top: 2%;
+}
+
+.SearchNav{
+   /* border:1px solid red; */
+   min-width: 30%;
+   height: 50%;
+   margin:auto;
+   border-radius:7px;
+}
+.MenuBox{
+  /* direction="row" justifyContent="space-evenly" border="1px solid red"
+   h="70px" w="70%"  alignItems="center" ml="20px" */
+  
+  justify-content: space-evenly;
+  border: 1px solid red;
+  height: 70px;
+  width: 70%;
+  align-items: center;
+  margin-left: 20px;
+
+}
+
+
+@media all and (min-width:451px) and (max-width:850px){
+
+  .NavbarMainBox{
+    /* border: 1px solid red; */
+    display: flex;
+    height: 80px;
+    width: 100%;
+    position:fixed;
+    background:white;
+    justify-content: space-evenly;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   
+  }
+  
+  .NavImg{
+     height: 80%;
+     margin: auto;
+     margin-top: 2%;
+  }
+  
+  .SearchNav{
+     /* border:1px solid red; */
+     max-width: 6%;
+     height: 50%;
+     margin:auto;
+     border-radius:7px;
+  }
+  .SignBox{
+    /* border: 1px solid red; */
+    width: 100%;
+    /* gap: -0px; */
+    
+  }
+  .MenuBox{
+
+    justify-content: space-evenly;
+    border: 1px solid red;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    margin-left: 20px;
+  }
+}
+
+
+
+/*   Award winners ---------------------------------------- */
+.AwardDiv{
+
+  display: flex;
+  border:1px solid black;
+  margin: auto;
+  margin-top:30px;
+  width: 80%;
+  height: 150px;
+  margin-bottom: 30px;
+  border-left: none;
+  border-right: none;
+  justify-content: space-evenly;
+}
+
+@media all and (min-width:451px) and (max-width:850px){
+
+  .AwardDiv{
+
+    display: flex;
+    margin: auto;
+    margin-top:30px;
+    width: 98%;
+    height: 200px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+  }
+  
+
+}
+
+
+
+/* Show All Books Component Style=----------------------------------------------------------------- */
+.MainOuterDiv{
+   /* border: 1px solid red; */
+   /* height: 350px; */
+   margin: auto;
+   max-width: 90%;
+   margin-bottom: 30px;
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   gap: 20px;
+   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+
+}
+.BooksDiv{
+  border:1px solid red;
+  height: 95%;
+  /* padding: 4%; */
+  border-radius: 10px;
+   height: 400px;
+  
+}
+.QuickView{
+   visibility: hidden;
+   /* border: 1px solid red; */
+   width: 50%;
+   color-scheme: red;
+}
+.BooksDiv:hover Button{
+  visibility: inherit;
+  /* margin-top: 10px; */
+  /* margin-bottom: 10px; */
+}
+.BooksDiv:hover{
+  
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+ 
+}
+
+@media all and (min-width:451px) and (max-width:850px){
+  .MainOuterDiv{
+    max-width: 95%;
+    /* border: 1px solid red; */
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+ 
+ }
+ .BooksDiv{
+   border:1px solid red;
+   height: 95%;
+   /* padding: 4%; */
+   border-radius: 10px;
+    height: 400px;
+   
+ }
+ .QuickView{
+    visibility: hidden;
+    /* border: 1px solid red; */
+    width: 70%;
+    color-scheme: red;
+ }
+ 
+
+}
+
+
+
+
+
+/* Modal of Quick View Book ----------------------------- */
+
+.ModalBookMain{
+  /* h="400px" w="100%" border="1px solid red" */
+  /* border: 1px solid red; */
+  height: 400px;
+  width: 100%;
+  display: flex;
+
+}
+.BoxImage{
+    width: 40%;
+    /* border: 1px solid blue; */
+    height: 100%;
+
+}
+.CartAddBox{
+  /* border: 2px solid black; */
+  height: 30%;
+  width: 100%;
+}
+
+
+.DetailBox{
+   /* border: 1px solid red; */
+   text-align: center;
+   width: 60%;
+   margin: auto;
+   height: 100%;
+}
+
+/* Filter page Sidebar ----------------------- */
+ .filterMainbox{
+    /* border: 1px solid red; */
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+
+ }
+.sidebar{
+     width: 20%;
+     /* border: 1px solid red; */
+     height: 100%;
+     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.displaybox{
+   width: 80%;
+   margin: auto;
+   /* border: 1px solid blue; */
+   /* height: 100%; */
+}
+
+
+
+/* Sidebar component ----------------------------------------- */
+.SidebarMainbox{
+   /* border: 1px solid green; */
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+.Binding{
+   /* border: 1px solid green; */
+   margin-top: 20px;
+   /* height: 150px; */
+   width: 100%;
+   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+   margin-bottom: 20px;
+   padding-bottom: 3%;
+}
+
+
+
+
+
+/* Cart Component -------------------------------------- */
+.cartMap{
+  /* border: 1px solid blue; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+   height: 100px;
+   display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+}
+.CartFooter{
+  margin: auto;
+  margin-top: -40px;
+    /* border: 1px solid blue; */
+    border-radius: 7px;
+    height: 150px;
+    width: 97%;
+   background-color: rgb(218, 211, 211);
+}
+.cartTotal{
+  /* ml="50%" borderLeft="1px Solid gray" h="60%" display="flex" */
+  margin-left: 50%;
+  height: 60%;
+  display: flex;
+ padding-left: 3%;
+ padding-top: 1%;
+ box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
